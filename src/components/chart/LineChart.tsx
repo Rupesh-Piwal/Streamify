@@ -33,13 +33,13 @@ interface LineChartProps {
   };
 }
 const LineChart: React.FC<LineChartProps> = ({ data }) => {
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: { position: "top" },
-      title: { display: true, text: "User Growth (Last 12 months)" },
-    },
-  };
+  // const options = {
+  //   responsive: true,
+  //   plugins: {
+  //     legend: { position: "top" },
+  //     title: { display: true, text: "User Growth (Last 12 months)" },
+  //   },
+  // };
   return <Line data={data} />;
 };
 

@@ -7,8 +7,8 @@ import DataTable from "@/components/Table/DataTable";
 import { FaDollarSign, FaHeadphones, FaMusic, FaUsers } from "react-icons/fa";
 import {
   mockUserGrowthData,
-  mockRevenueData,
-  mockTopSongsData,
+  // mockRevenueData,
+  // mockTopSongsData,
 } from "@/data/mockData";
 
 export default function Home() {
