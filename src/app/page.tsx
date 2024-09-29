@@ -15,7 +15,7 @@ export default function Home() {
 
       <div className="container mx-auto py-8">
         {/* Metrics Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <MetricsCard title="Total Users" value={4500} icon={<FaUsers />} />
           <MetricsCard
             title="Active Users"
