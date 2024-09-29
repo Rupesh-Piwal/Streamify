@@ -10,12 +10,12 @@ export default function Home() {
   const totalStreams = 56780;
   const topArtist = "Taylor Swift";
   return (
-    <div className="min-h-screen bg-[#0E1011] px-[30px] md:px-[100px]">
+    <div className="min-h-screen bg-[#0E1011] px-[10px] md:px-[100px]">
       {/* Header */}
 
       <div className="container mx-auto py-8">
         {/* Metrics Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
           <MetricsCard title="Total Users" value={4500} icon={<FaUsers />} />
           <MetricsCard
             title="Active Users"
