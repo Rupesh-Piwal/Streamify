@@ -7,8 +7,8 @@ import DataTable from "@/components/Table/DataTable";
 import { FaDollarSign, FaHeadphones, FaMusic, FaUsers } from "react-icons/fa";
 import {
   mockUserGrowthData,
-  // mockRevenueData,
-  // mockTopSongsData,
+  mockRevenueData,
+  mockTopSongsData,
 } from "@/data/mockData";
 
 export default function Home() {
@@ -44,31 +44,37 @@ export default function Home() {
           />
         </div>
 
-        {/* User Growth Line Chart */}
-        <div className="bg-[#171819] border border-[#161D26] shadow-md rounded-lg my-6 p-4">
-          <h2 className=" text-slate-300 text-lg font-semibold mb-4">
-            User Growth
-          </h2>
-          <LineChart data={mockUserGrowthData} />
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {/* User Growth Line Chart */}
+          <div className="bg-[#171819]  max-w-[500px] border border-[#161D26] shadow-md rounded-lg my-6 p-4">
+            <h2 className=" text-slate-300 text-lg font-semibold mb-4">
+              User Growth
+            </h2>
+            <LineChart data={mockUserGrowthData} />
+          </div>
 
-        {/* Revenue Distribution Pie Chart */}
-        <div className="bg-white shadow-md rounded-lg my-6 p-4">
-          <h2 className="text-lg font-semibold mb-4">Revenue Distribution</h2>
-          <PieChart />
-        </div>
+          {/* Revenue Distribution Pie Chart */}
+          <div className="bg-[#171819] max-w-[500px] border border-[#161D26] shadow-md rounded-lg my-6 p-4">
+            <h2 className="text-lg text-slate-300 font-semibold mb-4">
+              Revenue Distribution
+            </h2>
+            <PieChart data={mockRevenueData} />
+          </div>
 
-        {/* Top 5 Streamed Songs Bar Chart */}
-        <div className="bg-white shadow-md rounded-lg my-6 p-4">
-          <h2 className="text-lg font-semibold mb-4">Top 5 Streamed Songs</h2>
-          <BarChart />
-        </div>
+          {/* Top 5 Streamed Songs Bar Chart */}
+          <div className="bg-[#171819] max-w-[500px] border border-[#161D26] shadow-md rounded-lg my-6 p-4">
+            <h2 className="text-lg text-slate-300 font-semibold mb-4">
+              Top 5 Streamed Songs
+            </h2>
+            <BarChart data={mockTopSongsData} />
+          </div>
 
-        {/* Filter for Recent Streams */}
-        <div className="bg-white shadow-md rounded-lg my-6 p-4">
-          <h2 className="text-lg font-semibold mb-4">Recent Streams</h2>
-          <Filter />
-          <DataTable />
+          {/* Filter for Recent Streams */}
+          <div className="bg-white shadow-md rounded-lg my-6 p-4">
+            <h2 className="text-lg font-semibold mb-4">Recent Streams</h2>
+            <Filter />
+            <DataTable />
+          </div>
         </div>
       </div>
     </div>
