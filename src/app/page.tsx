@@ -45,8 +45,10 @@ export default function Home() {
         </div>
 
         {/* User Growth Line Chart */}
-        <div className="bg-white shadow-md rounded-lg my-6 p-4">
-          <h2 className="text-lg font-semibold mb-4">User Growth</h2>
+        <div className="bg-[#171819] border border-[#161D26] shadow-md rounded-lg my-6 p-4">
+          <h2 className=" text-slate-300 text-lg font-semibold mb-4">
+            User Growth
+          </h2>
           <LineChart data={mockUserGrowthData} />
         </div>
 
