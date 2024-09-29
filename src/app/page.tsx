@@ -5,6 +5,11 @@ import Filter from "@/components/Filter";
 import MetricsCard from "@/components/MetricsCard";
 import DataTable from "@/components/Table/DataTable";
 import { FaDollarSign, FaHeadphones, FaMusic, FaUsers } from "react-icons/fa";
+import {
+  mockUserGrowthData,
+  mockRevenueData,
+  mockTopSongsData,
+} from "@/data/mockData";
 
 export default function Home() {
   const totalStreams = 56780;
@@ -42,7 +47,7 @@ export default function Home() {
         {/* User Growth Line Chart */}
         <div className="bg-white shadow-md rounded-lg my-6 p-4">
           <h2 className="text-lg font-semibold mb-4">User Growth</h2>
-          <LineChart />
+          <LineChart data={mockUserGrowthData} />
         </div>
 
         {/* Revenue Distribution Pie Chart */}

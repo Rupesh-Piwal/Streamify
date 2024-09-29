@@ -1,52 +1,36 @@
-export const mockStreams = [
-  {
-    songName: "Song A",
-    artist: "Artist 1",
-    dateStreamed: "2023-09-01",
-    streamCount: 1500,
-    userId: "user123",
-  },
-  {
-    songName: "Song B",
-    artist: "Artist 2",
-    dateStreamed: "2023-09-02",
-    streamCount: 1200,
-    userId: "user456",
-  },
-  {
-    songName: "Song C",
-    artist: "Artist 3",
-    dateStreamed: "2023-09-03",
-    streamCount: 1800,
-    userId: "user789",
-  },
-  // Add more mock data as needed
-];
+// mockData.ts
 
 export const mockUserGrowthData = {
   labels: [
-    "January",
-    "February",
-    "March",
-    "April",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
-    "June",
-    "July",
-    "August",
-    "September",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
   ],
   datasets: [
     {
       label: "Total Users",
-      data: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-      borderColor: "#4A90E2",
-      fill: false,
+      data: [
+        3000, 3200, 3400, 3600, 4000, 4200, 4500, 4800, 5000, 5300, 5600, 6000,
+      ],
+      borderColor: "rgba(75, 192, 192, 1)",
+      backgroundColor: "rgba(75, 192, 192, 0.2)",
     },
     {
       label: "Active Users",
-      data: [50, 100, 150, 200, 250, 300, 350, 400, 450],
-      borderColor: "#50E3C2",
-      fill: false,
+      data: [
+        1200, 1300, 1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800, 1900,
+      ],
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
     },
   ],
 };
@@ -55,13 +39,20 @@ export const mockRevenueData = {
   labels: ["Subscriptions", "Ads"],
   datasets: [
     {
-      label: "Revenue",
-      data: [65, 35],
-      backgroundColor: ["#4A90E2", "#50E3C2"],
+      label: "Revenue Sources",
+      data: [18000, 6000],
+      backgroundColor: ["rgba(54, 162, 235, 0.6)", "rgba(255, 206, 86, 0.6)"],
     },
   ],
 };
 
 export const mockTopSongsData = {
-  labels: ["Song A", "Song B", "Song C", "Song D"],
+  labels: ["Song A", "Song B", "Song C", "Song D", "Song E"],
+  datasets: [
+    {
+      label: "Stream Count",
+      data: [4500, 4200, 4000, 3900, 3700],
+      backgroundColor: "rgba(153, 102, 255, 0.6)",
+    },
+  ],
 };
